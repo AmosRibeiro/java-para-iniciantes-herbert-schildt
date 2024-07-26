@@ -1,2 +1,2 @@
-# ola-mundo-java
- codigos em java
+# Olá, mundo! Em Java
+ Aprendendo códigos em Java.
