@@ -2,7 +2,7 @@ public class PesoLunar {
     public static void main(String[] args) {
         double pesoT, pesoL;
 
-        pesoT = 94;
+        pesoT = 92;
 
         pesoL = pesoT * 0.17;
 
