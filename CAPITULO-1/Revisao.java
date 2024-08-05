@@ -13,9 +13,9 @@ public class Revisao {
 
         for(porcentagem=10; porcentagem <= 100;porcentagem = porcentagem + 10){
             porcentagem = porcentagem / 100;
-           resultado = numero1 * porcentagem;
+            resultado = numero1 * porcentagem;
 
-           porcentagem = porcentagem * 100;
+            porcentagem = porcentagem * 100;
             System.out.println(porcentagem+"% de " + numero1 +" é "+ resultado + ".");
 
             contador++;
