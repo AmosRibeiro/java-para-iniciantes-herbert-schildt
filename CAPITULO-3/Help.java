@@ -6,7 +6,7 @@ public class Help {
         throws java.io.IOException{
             char choice;
 
-            System.out.println("Você precisa de ajuda em:");
+            System.out.println("Você precisa de ajuda com:");
             System.out.println("   1. if");
             System.out.println("   2. switch");
             System.out.println("Escolha um: ");
