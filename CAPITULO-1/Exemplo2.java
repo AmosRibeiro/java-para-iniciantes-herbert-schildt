@@ -11,11 +11,11 @@
 	
 	var1 = 1024; //esta instrução atribui 1024 a var1
 	
-	System.out.println("var1 contains " + var1);
+	System.out.println("var1 contains " + var1);//esta instrução imprime na tela um texto concatenado a um variavel
 	
-	var2 = var1 / 2;
+	var2 = var1 / 2; //esta instrução faz uma operação 
 	
-	System.out.print("var2 contains var1 / 2: ");
-	System.out.println(var2);
+	System.out.print("var2 contains var1 / 2: "); //imprime um texto na tela
+	System.out.println(var2); //imprime o valor da variavel na tela
 	}
 }
