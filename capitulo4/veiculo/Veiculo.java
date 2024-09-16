@@ -6,6 +6,6 @@ public class Veiculo {
     int consumo;
 
     void alcance(){
-        System.out.println(" O alcance é de " + capacidadeCombustivel * consumo);
+        System.out.println(" E seu alcance é de " + capacidadeCombustivel * consumo + ".");
     }
 }
