@@ -7,7 +7,6 @@ public class StrOps {
         String str2 = new String(str1);
         String str3 = "Java strings are powerful.";
         int result, idx;
-        char ch;
 
         System.out.println("Length of str1: " + str1.length());
 
