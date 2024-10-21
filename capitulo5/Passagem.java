@@ -1,4 +1,4 @@
-package capitulo5;
+/*package capitulo5;
 
 public class Passagem {
     private Voo voo;
@@ -19,3 +19,4 @@ public class Passagem {
         return nomePassageiro;
     }
 }
+*/
