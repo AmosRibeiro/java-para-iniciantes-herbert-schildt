@@ -14,5 +14,9 @@ public class ShowBitsDemo {
 
         System.out.println("\n237658768 em binário é ");
         li.show(237658768);
+
+        // você também pode exibir os bits de ordem inferior de qualquer inteiro
+        System.out.println("\n8 Bits de ordem inferior de 87987 em binário: ");
+        b.show(87987);
     }
 }

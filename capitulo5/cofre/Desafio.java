@@ -8,7 +8,7 @@ public class Desafio {
         Scanner scanner = new Scanner(System.in);
         String tipoCofre = scanner.nextLine();
 
-        // TODO: Implemente a condição necessário para a verificação dos cofres seguros:
+        
         if (tipoCofre.equalsIgnoreCase("digital")) {
         int senhaCofre = scanner.nextInt();
         int confirmarSenha = scanner.nextInt();
