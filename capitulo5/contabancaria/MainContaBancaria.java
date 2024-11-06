@@ -7,7 +7,7 @@ public class MainContaBancaria {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // TODO: Criar uma nova conta bancária com o saldo inicial
+
         double saldoInicial = scanner.nextDouble();
         ContaBancaria conta = new ContaBancaria(saldoInicial);
 

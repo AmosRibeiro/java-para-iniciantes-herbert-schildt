@@ -8,14 +8,14 @@ public class ContaBancaria {
     }
 
     public void depositar(double valor) {
-        // TODO: Incrementar o saldo com o valor e imprimir "Deposito feito."
+  
         this.saldo = saldo + valor;
         System.out.println("Deposito feito.");
         imprimirSaldo();
     }
 
     public void sacar(double valor) {
-        // TODO: Verificar se o saldo é suficiente considerando o valor:
+ 
         if(valor <= saldo){
             this.saldo = saldo - valor;
             System.out.println("Saque feito.");
