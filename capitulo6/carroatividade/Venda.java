@@ -23,7 +23,7 @@ public class Venda {
             JOptionPane.showMessageDialog(null,"Venda não realizada!");
         }
 
-        System.out.println(carro.imprimirResumoCarro() + "\n" + cliente.imprimirResumoCliente() + "\n" + carro.atualizarValorDesconto(1));
+        System.out.println(carro.imprimirResumoCarro() + "\n" + cliente.imprimirResumoCliente());
     }
 
     public boolean validarVenda(double valorParcela, double renda, int idade){
