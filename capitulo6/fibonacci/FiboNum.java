@@ -14,29 +14,30 @@ public class FiboNum {
         int inputNum;
         boolean isFibo = false;
         
-        for(int i = 0, b = 1, c = 2; c < 20 ; c++){
+        for(int i = 0, b = 1, c = 2; c < fibo.length ; c++){
             fibo[c] = fibo[i] + fibo[b];
             i++;
             b++;
         }
         System.out.println(Arrays.toString(fibo));
-
+        System.out.print("Type a number to verify if it belong to fibonacci sequence in the range between 1 and 6765: ");
         inputNum = sc.nextInt();
         
         if(inputNum <= 0 || inputNum > 6765){
-            System.out.println("Invalid number, digit something in the range between 1 and 6765.");
+            System.out.println("Invalid number, type a number in the range between 1 and 6765.");
             isFibo = true;
-        } else{
-            
-            for(int c = 0; c < 20; c++)
-            if(inputNum == fibo[c]){
-                System.out.println("Congratulations, is a fibo number!");
-                isFibo = true;
-                break;
-            }
+        } 
+        else{
+            for(int c : fibo) // Percorre o Array todo e vai colocando o valor dele na variavel c.
+                if(inputNum == c){ // Verifica se o input está contido no array.
+                    System.out.println("Congratulations, the number " + inputNum + " it's a fibo number!");
+                    isFibo = true;
+                    break;
+                }
         }
         if(isFibo == false){
-            System.out.println("Your number isn't a fibo, sorry.");
+            System.out.println("Sorry, " + inputNum + " isn't a fibo.");
         }
+        sc.close();
     }
 }
