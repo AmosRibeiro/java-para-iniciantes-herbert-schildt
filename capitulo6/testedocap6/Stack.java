@@ -3,38 +3,46 @@ package capitulo6.testedocap6;
 public class Stack {
     
     private char pilha[];
-    int pushIndex, popIndex;
+    private int tos;
 
-    Stack(int pilhaTamanho){
-        pilha = new char[pilhaTamanho];
-        pushIndex = popIndex = 0;
+    Stack(int size){
+        pilha = new char[size];
+        tos = 0;
+    }
+
+    Stack(Stack ob){
+        tos = ob.tos;
+        pilha = new char[ob.pilha.length];
+
+        for(int i = 0; i < tos; i++) 
+            pilha[i] = ob.pilha[i];
     }
 
     Stack(char a[]){
-        pushIndex = 0;
-        popIndex = 0;
-
         pilha = new char[a.length];
 
-        for(int i = 0; i < a.length; i++) push (a[i]);
+        for(int i = 0; i < a.length; i++){
+            push(a[i]);
+        }
     }
 
-    public void push(char ch){
-        if(pushIndex==pilha.length){
-            System.out.println(" - Queue is full.");
+    void push(char ch){
+        if(tos==pilha.length){
+            System.out.println(" -- Pilha está cheia.");
             return;
         }
 
-        pilha[pushIndex++] = ch;
+        pilha[tos] = ch;
+        tos++;
     }
     
-
     char pop(){
-        if(popIndex == pushIndex) {
-            System.out.println(" - Queue is empty.");
+        if(tos == 0){
+            System.out.println(" -- Pilha está vazia.");
             return (char) 0;
         }
 
-        return pilha[popIndex++];     
+        tos--;
+        return pilha[tos];
     }
 }
